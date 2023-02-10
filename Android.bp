@@ -42,23 +42,23 @@ android_app {
     },
 
     required: [
-        "privapp_whitelist_org.android.updater",
-        "default-permissions_org.android.updater"
+        "privapp_whitelist_com.android.updater",
+        "default-permissions_com.android.updater"
     ],
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_org.android.updater",
+    name: "privapp_whitelist_com.android.updater",
     system_ext_specific: true,
     sub_dir: "permissions",
-    src: "privapp_whitelist_org.android.updater.xml",
+    src: "privapp_whitelist_com.android.updater.xml",
     filename_from_src: true,
 }
 
 prebuilt_etc {
-    name: "default-permissions_org.android.updater",
+    name: "default-permissions_com.android.updater",
     system_ext_specific: true,
     sub_dir: "default-permissions",
-    src: "default-permissions_org.android.updater.xml",
+    src: "default-permissions_com.android.updater.xml",
     filename_from_src: true,
 }
